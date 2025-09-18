@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Guess The Number</h1>
+            <p>Type a number and Press Submit</p>
+        </div>
+        
+        <div class="game-area">
+            <div class="controls">
+                <button id="startBtn" class="btn">Start</button>
+                <button id="diffBtn" class="btn">Easy</button>
+                <button id="helpBtn" class="btn">Help</button>
+            </div>
+            
+            <div class="input-area">
+                <input type="number" id="numberInput" placeholder="Enter your guess" disabled>
+                <button id="submitBtn" class="btn submit-btn" disabled>Guess!</button>
+                <button id="continueBtn" class="btn continue-btn" disabled>Continue</button>
+            </div>
+            
+            <div class="status">
+                <p id="attemptsText">Attempts Remaining: 0</p>
+            </div>
+            
+            <div class="result" id="result"></div>
+        </div>
+        
+        <div class="footer">
+            <p>Created by Jayendra Bamne as Internship Project for Afame Technologies</p>
+        </div>
+    </div>
+    
+    <div id="helpModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Game Instructions</h2>
+            <div class="help-text">
+                <p>Thank you for playing Guess the Number game.</p>
+                <p>Here are the instructions for playing the game:</p>
+                <p>You have to guess the randomly generated number by computer in limited number of attempts. Each time you guess, the game will tell you if your guess is higher or lower than the target number.</p>
+                <ul>
+                    <li>Play game by pressing start button</li>
+                    <li>There are two difficulty settings:</li>
+                    <ul>
+                        <li><strong>Easy:</strong> Number of attempts are 10</li>
+                        <li><strong>Hard:</strong> Number of attempts are 7</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

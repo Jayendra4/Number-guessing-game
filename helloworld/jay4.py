@@ -1,0 +1,6 @@
+a=int(input("Enter first number :"))
+b=int(input("Enter Second number :"))
+print ("The Sum of a and b is ", a+b)
+print("Subract a and b is :", a-b)
+print("modulus of a and b is ",a%b)
+print("floor division of a and b is :",a//b)
