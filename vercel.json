@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "name": "number-guessing-game",
+  "builds": [
+    {
+      "src": "web-version/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/web-version/$1"
+    },
+    {
+      "src": "/",
+      "dest": "/web-version/index.html"
+    }
+  ]
+}
